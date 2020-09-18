@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|start"
+        android:paddingEnd="@dimen/dp30"
+        android:paddingStart="@dimen/dp10"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/font_size_normal" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/btnCancel"
+        android:layout_toStartOf="@+id/btnSubmit"
+        android:gravity="center"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/font_size_normal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|start"
+        android:paddingEnd="@dimen/dp10"
+        android:paddingStart="@dimen/dp30"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/font_size_normal" />
+</RelativeLayout>

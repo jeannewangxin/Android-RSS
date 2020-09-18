@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- app theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryDark">@color/status_bar_color</item>
+        <item name="colorAccent">@color/theme_color</item>
+        <!--window背景色. -->
+        <item name="android:windowBackground">@color/base_background</item>
+        <!-- 所有文本的颜色。 -->
+        <item name="android:textColor">@color/home_text</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+        <!--防止多点触控-->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <!--所有dialog的样式-->
+        <item name="android:dialogTheme">@style/AlertDialog</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:buttonStyle">@style/Base.Widget.AppCompat.Button.Borderless</item>
+    </style>
+
+    <!--系统AlertDialog的样式修改-->
+    <style name="AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/theme_color</item>
+    </style>
+
+    <!--启动页style-->
+    <style name="Splash" parent="AppTheme">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--透明样式-->
+
+    <!-- CommonDialog样式 -->
+    <style name="Loading">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- popup window 显示消失动画-->
+    <style name="PopWindowAnim">
+        <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+        <!-- 指定消失的动画xml  -->
+    </style>
+
+    <!--输入框文字格式-->
+    <style name="InputEditText" parent="AppTheme">
+        <item name="android:layout_height">@dimen/dp34</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/dp15</item>
+        <item name="android:layout_marginEnd">@dimen/dp15</item>
+        <item name="android:layout_marginTop">@dimen/dp10</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+        <item name="android:textSize">@dimen/font_size_smaller</item>
+        <item name="android:textColor">@color/home_text</item>
+        <item name="android:paddingEnd">@dimen/dp10</item>
+        <item name="android:paddingStart">@dimen/dp10</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/item_bg_normal</item>
+    </style>
+
+    <style name="ButtonOrange" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp44</item>
+        <item name="android:background">@drawable/button_orange_bg</item>
+        <item name="android:layout_marginStart">@dimen/dp15</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">@dimen/dp15</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="ButtonWhite" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp44</item>
+        <item name="android:background">@drawable/button_white_bg</item>
+        <item name="android:layout_marginStart">@dimen/dp15</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">@dimen/dp15</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/home_text</item>
+    </style>
+
+
+    <!--线(居左有间距的)-->
+    <style name="LineMarginLeft" parent="AppTheme">
+        <item name="android:layout_height">@dimen/list_divider_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/dp15</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+
+    <!--线-->
+    <style name="Line" parent="AppTheme">
+        <item name="android:layout_height">@dimen/list_divider_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+
+    <!--标题栏右侧文字样式-->
+
+    <!--标题栏右侧图片样式-->
+
+    <style name="Banner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp410</item>
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">false</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">5000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">@color/transparent</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">1000</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+    </style>
+
+    <!--popupWindow弹出dialog的样式-->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--popupWindow底部位移动画-->
+    <style name="trip_mystyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/trip_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/trip_dialog_exit</item>
+    </style>
+
+
+</resources>

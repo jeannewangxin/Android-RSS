@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--全局尺寸-->
+    <!--按钮的高度-->
+    <dimen name="title_height">44dp</dimen><!--标题栏高度-->
+    <dimen name="list_divider_height">0.5dp</dimen><!--线宽-->
+    <!--线宽-->
+    <!--线宽-->
+    <!--底部导航栏高度-->
+    <!--底部导航栏图标大小-->
+    <dimen name="title_width">300dp</dimen><!--标题栏宽度-->
+    <dimen name="title_left_width">38dp</dimen>
+    <!--右箭头size-->
+
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp11">11dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp25">25dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp34">34dp</dimen>
+    <dimen name="dp35">35dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp44">44dp</dimen>
+    <dimen name="dp46">46dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp90">90dp</dimen>
+
+    <dimen name="dp210">210dp</dimen>
+    <dimen name="dp410">410dp</dimen>
+
+
+    <!--文字大小-->
+    <dimen name="font_size_largest">19sp</dimen>
+    <dimen name="font_size_large">17sp</dimen>
+    <dimen name="font_size_normal">16sp</dimen>
+    <dimen name="font_size_small">15sp</dimen>
+    <dimen name="font_size_smaller">14sp</dimen>
+    <dimen name="font_size_smallest">13sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+
+    <dimen name="stroke_width">1.5dp</dimen>
+
+    <!--需要适配的尺寸-->
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center" android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <TextView
+        android:textSize="25sp"
+        android:id="@+id/lbl_your_name" android:text="@string/delete_by_date_text"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp10"/>
+
+    <EditText
+        android:id="@+id/date_b"
+        android:layout_width="match_parent"  android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Date de debut(YYYY-MM-DD)"
+        android:imeOptions="actionDone" />
+    <EditText
+        android:id="@+id/date_e"
+        android:layout_width="match_parent"  android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Date de fin(YYYY-MM-DD)"
+        android:imeOptions="actionDone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp4"
+            android:text="@string/cancel"
+            android:onClick="cancelEditDate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp4"
+        android:text="@string/yes"
+        android:onClick="finishEditDate"/>
+
+    </LinearLayout>
+</LinearLayout>

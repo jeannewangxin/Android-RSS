@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner"
+        style="@style/Banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:banner_indicatorGravity="bottom|center_horizontal"
+        app:banner_pointTopBottomMargin="@dimen/dp70" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp90"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:text="@string/login_msg2"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/font_size_normal"
+                    android:textStyle="bold" />
+
+                <EditText
+                    style="@style/InputEditText"
+                    android:layout_height="@dimen/dp44"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@drawable/edit_text_bg"
+                    android:text=""
+                    android:visibility="gone"
+                    android:inputType="text"
+                    android:textColorHint="@color/content_text" />
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/InputEditText"
+                    android:layout_height="@dimen/dp44"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="@string/hint_email"
+                    android:text=""
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/content_text" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/InputEditText"
+                    android:layout_height="@dimen/dp44"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/edit_text_bg"
+                    android:hint="@string/hint_pass"
+                    android:text=""
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/content_text" />
+
+                <Button
+                    style="@style/ButtonOrange"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:onClick="login"
+                    android:text="@string/btn_login" />
+
+
+
+                <Button
+                    style="@style/ButtonWhite"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:onClick="onRegister"
+                    android:text="@string/btn_register_seller" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp20"
+                    android:background="@color/transparent" />
+
+            </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fr.ws.reader">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- wifi 权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许查看当前网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 改变当前网络状态 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+    <application
+        android:name="fr.ws.reader.app.MainApplication"
+        android:allowBackup="true"
+        tools:remove="android:appComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="fr.ws.reader.ui.activity.LoginFirstActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+       </activity>
+
+        <activity
+            android:name="fr.ws.reader.ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" >
+
+        </activity>
+        <activity android:name="fr.ws.reader.ui.activity.FeedsArticleActivity"/>
+
+        <activity android:name="fr.ws.reader.ui.activity.RegisterActivity" />
+        <activity
+            android:name="fr.ws.reader.ui.activity.PersonDataActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="fr.ws.reader.ui.activity.HistoryActivity" />
+        <activity
+            android:name="fr.ws.reader.ui.activity.NetErrorActivity"
+            android:launchMode="singleTask" />
+        <provider
+            android:name=".util.mplrssProvider"
+            android:authorities="fr.reader.mplrssProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
+        <service
+            android:name=".util.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

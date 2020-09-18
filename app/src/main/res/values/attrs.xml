@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="wheelview">
+        <attr name="gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColorOut" format="color" />
+        <attr name="textColorCenter" format="color" />
+        <attr name="dividerColor" format="color" />
+    </declare-styleable>
+
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="IdentifyingCodeView">
+        <!--输入框的数量-->
+        <attr name="icv_et_number" format="integer" />
+        <!--输入框的宽度-->
+        <attr name="icv_et_width" format="dimension|reference" />
+        <!--输入框之间的分割线-->
+        <attr name="icv_et_divider_drawable" format="reference" />
+        <!--输入框文字颜色-->
+        <attr name="icv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="icv_et_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时边框-->
+        <attr name="icv_et_bg_focus" format="reference" />
+        <!--输入框没有焦点时边框-->
+        <attr name="icv_et_bg_normal" format="reference" />
+    </declare-styleable>
+</resources>

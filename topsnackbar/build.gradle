@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+configurations {
+    javadocDeps
+}
+
+dependencies {
+    implementation 'com.android.support:support-annotations:24.1.1'
+    javadocDeps 'com.android.support:support-annotations:24.1.1'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}

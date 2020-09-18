@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>     <!--全透明-->
+    <!--标题栏颜色-->
+    <color name="theme_color">#E45D30</color>       <!--主题色-->
+    <color name="button_color">#E74E00</color>      <!--按钮颜色-->
+    <color name="button_color_pressed">#c1471e</color><!--按钮压下颜色-->
+    <color name="base_background">#ffffff</color>   <!--页面默认背景色-->
+    <!--页面默认背景色(暗)-->
+    <color name="title_background">#fefeff</color>   <!--标题栏背景颜色-->
+    <color name="status_bar_color">#d1d1d1</color>   <!--状态栏背景颜色-->
+    <!--支付宝H5支付状态栏颜色-->
+    <color name="splash_background">#fcfcfc</color>     <!--启动页背景颜色-->
+    <color name="item_pressed">#dcdcdc</color>     <!--白背景按钮压下颜色-->
+
+    <color name="color_white">#ffffff</color>       <!--纯白-->
+    <color name="color_black">#000000</color>       <!--纯黑-->
+    <color name="half_white_transparent">#98ffffff</color><!--半透明白-->
+    <!--半透明黑-->
+    <!--80%半透明黑-->
+    <!--搜索框的背景-->
+    <!--搜索框下压的背景-->
+    <!--文本颜色-->
+    <color name="home_text">#111111</color>     <!--标题文字颜色-->
+    <!--标题文字颜色-->
+    <color name="content_text">#666666</color>  <!--内容文字颜色1-->
+    <!--内容文字颜色2-->
+    <color name="hint_text">#aaaaaa</color>     <!--默认文字的颜色-->
+    <!--默认文字的颜色2-->
+    <color name="title_text">#030303</color>     <!--标题栏文字颜色-->
+    <!---->
+
+    <color name="color_f4">#f4f4f4</color>
+    <color name="color_e7">#e7e7e7</color>
+    <color name="color_cb">#CBCBCB</color>
+
+    <color name="color_yellow">#fdbb12</color>
+    <color name="color_red">#f23030</color>
+
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+</resources>

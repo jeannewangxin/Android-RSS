@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- fragement home -->
+    <string name="title">Rss reader</string>
+    <string name="sub_title">Best rss reader</string>
+
+    <!--error code -->
+    <string name="event_list_error1">Compte invalide</string>
+    <string name="error4">Echoué</string>
+
+    <string name="resetpwd_error1">Numéro de téléphone invalide</string>
+
+    <string name="register_user_error1">Numéro de téléphone invalide</string>
+    <string name="register_user_error2">Mots de passe invalide</string>
+    <string name="register_user_error3">Merci de répeter les mêmes mots de pass </string>
+
+
+    <string name="app_name">Reader</string>
+    <string name="tab_home">MENU</string>
+    <string name="tab_person">COMPTE</string>
+    <string name="tab_sub">RECOMMEND</string>
+    <string name="readlater_sub">READ LATER</string>
+
+    <string name="cancel">Annuler</string>
+    <string name="send">Envoyer</string>
+    <string name="price">Prix de pièce:</string>
+    <string name="delete_by_date_text">Entrez date:</string>
+    <string name="My_favorite">Mes download articles</string>
+
+    <!--用户文字-->
+    <string name="user_email">E-mail *</string>
+    <string name="user_password">Mot de passe *</string>
+    <string name="user_repassword">Confirmation de mot de passe *</string>
+    <string name="user_lastname">Nom *</string>
+    <string name="user_firstname">Prénom *</string>
+    <string name="user_telephone">Téléphone mobile *</string>
+    <string name="user_address">Adresse *</string>
+    <string name="user_zip">Code postal *</string>
+    <string name="user_city">Ville *</string>
+
+    <!--提示语-->
+
+
+    <string name="btn_login">JE ME CONNECTE</string>
+    <string name="btn_register_seller">JE CRÉE MON COMPTE</string>
+
+    <string name="title_recommend">Produits les plus consultés</string>
+    <string name="title_person">Mon compte</string>
+
+    <string name="credit_data">MON PORTEFEUILLE : </string>
+    <string name="person_data">Mes informations personelles</string>
+    <string name="password_data">Changer mots de passe</string>
+    <string name="code_secret">Code secret</string>
+    <string name="history">Historique</string>
+    <string name="logout">Déconnexion</string>
+
+    <!--LoginFirst-->
+
+    <!--LoginSecond-->
+    <string name="login_msg2">CONNECTEZ-VOUS</string>
+    <string name="btn_forgot_password">{fe-github} Mot de passe oublié ?</string>
+    <string name="hint_email">Votre adresse email</string>
+    <string name="hint_pass">Votre mot de passe</string>
+    <string name="hint_fp_email">Votre numéro portable.</string>
+    <string name="dialog_fp_title">Retrouver mon compte</string>
+    <string name="dialog_fp_msg">Envoyer par SMS</string>
+
+    <!--RegisterSeller-->
+
+    <!--OtherPersonInfo-->alert_success_title
+
+    <!--ProductMerchantDetail-->.
+
+    <!--NetError-->
+    <string name="net_error_msg1">En ce moment vous n\'avez pas de connexion</string>
+    <string name="net_error_msg2">Assurez-vous que vous êtes connecté à ta 3G ou ton WI-FI pour accéder.</string>
+
+    <!--Rease product Error-->
+
+    <string name="delete_check">Vous êtes sûr?</string>
+    <string name="yes">Oui</string>
+
+
+</resources>
